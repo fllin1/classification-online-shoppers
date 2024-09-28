@@ -30,9 +30,10 @@ Visualisations pour comprendre les distributions et les relations entre les vari
 
 ### Prétraitement des données :
 
-1. Encodage des variables catégorielles (par exemple, Month, VisitorType).
+1. Encodage des variables catégorielles.
 2. Normalisation ou standardisation des variables numériques si nécessaire.
-3. Gestion du déséquilibre des classes (la majorité des sessions n'aboutissent pas à un achat).
+3. Gestion du déséquilibre des classes.
+4. Division des données en ensembles d'entraînement et de test.
 
 ### Modélisation :
 
@@ -42,7 +43,7 @@ Visualisations pour comprendre les distributions et les relations entre les vari
  - Forêts aléatoires
  - XGBoost
  - Réseaux de neurones avec PyTorch
-- Utilisation de techniques pour gérer le déséquilibre des classes, comme le sur-échantillonnage avec SMOTE ou l'ajustement des poids de classe.
+*Utilisation de techniques pour gérer le déséquilibre des classes, comme le sur-échantillonnage avec SMOTE ou l'ajustement des poids de classe.*
 
 ### Évaluation des modèles :
 
@@ -50,8 +51,10 @@ Visualisations pour comprendre les distributions et les relations entre les vari
  - Précision
  - Rappel
  - F1-Score
+ - Matrice de Confusion
  - ROC-AUC
-- Matrices de confusion pour analyser les prédictions correctes et les erreurs.
+
+*Finir les deux derniers points*
 
 ### Optimisation et validation :
 
