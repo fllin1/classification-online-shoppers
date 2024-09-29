@@ -8,7 +8,7 @@ This project is based on the [Online Shoppers Purchasing Intention Dataset](http
   - [Prerequisites](#prerequisites)
   - [Dependency installation](#dependency-installation)
 - [🗃️ Project Steps: Classification](#️-project-steps-classification)
-  - [1. Exploration des données](#1-exploration-des-données)
+  - [1. Data Exploration](#1-data-exploration)
   - [2. Data Preprocessing](#2-data-preprocessing)
   - [3. Modeling](#3-modeling)
   - [4. Model Evaluation](#4-model-evaluation)
@@ -91,7 +91,11 @@ Download the [Online Shoppers Purchasing Intention Dataset](https://archive.ics.
 
 2. Run the main script to execute the model and generate results:
 
-Simply run all in `notebooks/classification.ipynb`.
+```bash
+
+python main.py
+
+```
 
 3. Results:
 
