@@ -1,112 +1,110 @@
-# 🔮 Prédiction des intentions d'achat en ligne
+# 🔮 Prediction of Online Shopping Intentions
 
-Ce projet est basé sur la base de données [Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset).
+This project is based on the [Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset).
 
-- [🔮 Prédiction des intentions d'achat en ligne](#-prédiction-des-intentions-dachat-en-ligne)
-  - [🪐 Description](#-description)
-  - [⚙️ Installation](#️-installation)
-    - [Prérequis](#prérequis)
-    - [Installation des dépendances](#installation-des-dépendances)
-  - [🗃️ Étapes du projet: Classification](#️-étapes-du-projet-classification)
-    - [1. Exploration des données](#1-exploration-des-données)
-    - [2. Prétraitement des données](#2-prétraitement-des-données)
-    - [3. Modélisation](#3-modélisation)
-    - [4. Évaluation des modèles](#4-évaluation-des-modèles)
-    - [5. Optimisation et validation](#5-optimisation-et-validation)
-    - [6. Analyse des résultats](#6-analyse-des-résultats)
-  - [🚀 Utilisation](#-utilisation)
-  - [🕋 Structure du projet](#-structure-du-projet)
-  - [🗝️ Keywords](#️-keywords)
+- [🔮 Prediction of Online Shopping Intentions](#-prediction-of-online-shopping-intentions)
+- [🪐 Description](#-description)
+- [⚙️ Installation](#️-installation)
+  - [Prerequisites](#prerequisites)
+  - [Dependency installation](#dependency-installation)
+- [🗃️ Project Steps: Classification](#️-project-steps-classification)
+  - [1. Exploration des données](#1-exploration-des-données)
+  - [2. Data Preprocessing](#2-data-preprocessing)
+  - [3. Modeling](#3-modeling)
+  - [4. Model Evaluation](#4-model-evaluation)
+  - [5. Optimization and Validation](#5-optimization-and-validation)
+  - [6. Results Analysis](#6-results-analysis)
+- [🚀 Usage](#-usage)
+- [🕋 Project Structure](#-project-structure)
+- [🗝️ Keywords](#️-keywords)
 
 
-## 🪐 Description
+# 🪐 Description
 
-Ce projet à pour but de résoudre un problème classique de **Machine Learning**, en faisant intervenir des techniques d'apprentissage, de classification, de régression ainsi que de clustering. 
+This project aims to solve a classic **Machine Learning** problem by involving techniques such as learning, classification, regression, and clustering.
 
-Nous procéderons tout d'abord à une **exploration des données** (EDA) puis implémenterons des méthodes de **classification** pour la prédiction d'une variable binaire.
+We will first perform a **data exploration** (EDA) and then implement **classification** methods to predict a binary variable.
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Prérequis
-Ce projet a été réalisé sur `Python 3.12`
+## Prerequisites
+This project was built with `Python 3.12`.
 
-### Installation des dépendances
+## Dependency installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🗃️ Étapes du projet: Classification
+# 🗃️ Project Steps: Classification
 
-Pour suivre les étapes de la classification, il suffit de lancer le notebook `notebook/classification.ipynb`.
+To follow the classification steps, simply run the notebook `notebook/classification.ipynb`.
 
-### 1. Exploration des données
+## 1. Data Exploration
 
-- Analyse descriptive des variables du dataset.
-- Visualisations pour comprendre les distributions et les relations entre les variables.
+- Descriptive analysis of the dataset variables.
+- Visualizations to understand distributions and relationships between variables.
 
-### 2. Prétraitement des données
+## 2. Data Preprocessing
 
-- Encodage des variables catégorielles.
-- Normalisation ou standardisation des variables numériques si nécessaire.
-- Gestion du déséquilibre des classes.
-- Division des données en ensembles d'entraînement et de test.
+- Encoding of categorical variables.
+- Normalization or standardization of numerical variables if necessary.
+- Handling class imbalance.
+- Splitting the data into training and test sets.
 
-### 3. Modélisation
+## 3. Modeling
 
-- Implémentation de différents algorithmes de classification, tels que :
-   - Régression Logistique
-   - Arbres de décision
-   - Forêts aléatoires
+- Implementing various classification algorithms, such as:
+   - Logistic Regression
+   - Decision Trees
+   - Random Forest
    - XGBoost
-   - Réseaux de neurones avec PyTorch
+   - Neural Networks with PyTorch
 
-*Utilisation de techniques pour gérer le déséquilibre des classes, comme le sur-échantillonnage avec SMOTE ou l'ajustement des poids de classe.*
+Techniques to handle class imbalance, such as oversampling with SMOTE or adjusting class weights, will be used.
 
-### 4. Évaluation des modèles
+## 4. Model Evaluation
 
-Utilisation de métriques adaptées pour les données déséquilibrées :
-- Précision
-- Rappel
+Using metrics tailored for imbalanced data:
+- Precision
+- Recall
 - F1-Score
-- Matrice de Confusion
+- Confusion Matrix
 - ROC-AUC
 
-### 5. Optimisation et validation
+## 5. Optimization and Validation
 
-- Ajustement des hyperparamètres avec des techniques comme la Grid Search.
-- Validation croisée pour assurer la robustesse du modèle.
+- Hyperparameter tuning using techniques such as Grid Search.
+- Cross-validation to ensure the model's robustness.
 
-### 6. Analyse des résultats
+## 6. Results Analysis
 
-- Identification des variables les plus influentes dans la prédiction.
-- Discussion sur les performances des différents modèles.
-  - Réflexion sur les limitations rencontrées et les améliorations possibles.
+- Identifying the most influential features in the prediction.
+- Discussing the performance of different models.
+  - Reflecting on limitations encountered and possible improvements.
 
-## 🚀 Utilisation
+# 🚀 Usage
 
-1. Téléchargement du dataset :
+1. Download the dataset:
 
-Téléchargez le dataset [Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset) et placez-le dans le répertoire data/ du projet.
+Download the [Online Shoppers Purchasing Intention Dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset) and place it in the project’s `data/` directory.
 
-2. Exécution du script principal :
+2. Run the main script to execute the model and generate results:
 
-```bash
-python main.py
-```
+Simply run all in `notebooks/classification.ipynb`.
 
-3. Résultats :
+3. Results:
 
-Les résultats, y compris les visualisations et les métriques de performance, seront générés dans le répertoire results/.
+The results, including visualizations and performance metrics, will be generated in the `results/` directory.
 
-## 🕋 Structure du projet
-- `data/` : Contient le dataset utilisé pour le projet.
-- `notebooks/` : Contient les notebooks Jupyter pour l'exploration et les essais.
-- `scripts/` : Contient les scripts Python pour le prétraitement, la modélisation et l'évaluation.
-- `results/` : Contient les sorties du modèle, les graphiques et les rapports.
-- `requirements.txt` : Liste des dépendances du projet.
-- `README.md` : Bonne lecture.
+# 🕋 Project Structure
+- `data/` : Contains the dataset used for the project.
+- `notebooks/` : Contains Jupyter notebooks for exploration and experimentation.
+- `scripts/` : Contains Python scripts for preprocessing, modeling, and evaluation.
+- `results/` : Contains model outputs, graphs, and reports.
+- `requirements.txt` : List of project dependencies.
+- `README.md` : Documentation and project overview.
 
-## 🗝️ Keywords
+# 🗝️ Keywords
 
 Imbalanced dataset, Feature selection, Online shopper's purchase intention, Real time prediction, Classification Methods
